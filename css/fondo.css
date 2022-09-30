@@ -1,0 +1,17 @@
+.fondo{
+    border: 5px solid rgba(125, 125, 125, 0.116);
+    width: 50vw;
+    height: 55vw;
+    position: absolute;
+    left: -25vw;
+    top: 25vh;
+    z-index: 1;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}

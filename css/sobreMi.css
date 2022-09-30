@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+.about_me{
+    width: 90%;
+    min-height: 90vh;
+    margin-top: 10vh;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about_me .name{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about_me .name .text_bienvenido{
+    font-size: 2rem;
+    color: var(--color1);
+    font-family: monospace;
+    display: block;
+    border-right: 2px solid;
+    padding-right: 2px;
+    animation: typing 4s steps(11) infinite ,
+     transparent 0.5s infinite;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 11ch;
+    }
+}
+
+@keyframes transparent{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.about_me .name h1{
+    font-size: 5rem;
+    color: rgb(205, 205, 205); 
+    margin: 20px 0;   
+    min-width: 40vw;
+    text-align: center;
+    transform: translateX(-500px);
+    animation: aparece2 0.8s linear forwards;
+}
+
+@keyframes aparece {
+    25%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.about_me .name h3{
+    font-size: 3rem;
+    -webkit-text-stroke: 1px var(--color1);
+    font-family: arial;
+    color: black;
+    transform: translateX(-500px);
+    animation: aparece2 1s linear  forwards;
+}
+
+@keyframes aparece2 { 
+    
+
+    100%{
+       transform: translateX(0px);
+    }
+}
+
+.about_me .name p{
+    font-size: 1.5rem;
+    color: rgb(164, 164, 164);
+    margin-top: 20px;
+}
+
+
+/*
+    Conocimientos
+*/
+
+.about_me .conocimientos{
+    width: 200px;
+    color: rgb(79, 78, 78);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.conocimientos span{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px 0 0;
+    color: rgb(255, 255, 255);
+    box-shadow:0 0px 4px rgba(213, 213, 213, 0.466), 0 0 20px rgba(228, 228, 228, 0.374) inset;
+}
+
+@media (max-width: 768px){
+    
+    .about_me{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about_me .conocimientos{
+        width: 300px;
+        margin-bottom: 130px;
+    }
+
+    .conocimientos span{
+        width: 110px;
+        height: 110px;
+    }
+}
