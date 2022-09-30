@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: flex-start;
-    border-bottom: 1px solid rgba(255, 0, 0, 0.155);
+    border-bottom: 1px solid rgba(192, 28, 28, 0.733);
 }
 
 .proyects section .web{
@@ -38,6 +38,7 @@
 
 .proyects section .web_description{
     width: 400px ;
+    margin-top: 30px;
     font-size: 1.5rem;
     color: rgb(211, 207, 207);
     margin-bottom: 20px;
@@ -46,7 +47,11 @@
 .web_info a{
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.web_info .link_github{
+    margin-left: 50px;
 }
 
 
@@ -56,4 +61,36 @@
         width: 200px;
     }
 
+}
+
+@media (max-width: 500px){
+
+    .proyects section .web{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .proyects section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyects section .web_description{
+        width: 80vw;
+
+        text-align: center;
+    }
+
+    .web_info{
+        display: flex;
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;    
+        align-items: center;
+    }
+
+    .web_info .link_github{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
 }

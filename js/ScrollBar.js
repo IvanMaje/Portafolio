@@ -17,10 +17,6 @@ window.onscroll = function(){
     // por 100 obtengo el porcentaje desplazado.
 
     progress.style.height = progressHeight + "%";
-    console.log(document.body.scrollHeight);
-    console.log(window.innerHeight);
-    console.log(totalHeight);
-    console.log("--------------------------");
     
 }
 

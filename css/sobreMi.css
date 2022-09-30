@@ -76,9 +76,8 @@ body{
 
 .about_me .name h3{
     font-size: 3rem;
-    -webkit-text-stroke: 1px var(--color1);
     font-family: arial;
-    color: black;
+    color: rgba(172, 32, 32, 0.685);
     transform: translateX(-500px);
     animation: aparece2 1s linear  forwards;
 }
